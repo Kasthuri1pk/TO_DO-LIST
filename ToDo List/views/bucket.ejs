@@ -1,0 +1,18 @@
+
+<link rel="stylesheet" href="/styles/layout.css">
+<div class="boxes">
+  <div class="con">
+  
+    <h2 class="Buck">Life's Adventures</h2>
+    <form action="/bucket" method="post">
+        <input type="text" name="newwish" placeholder="add your wish" >
+        <button class="btn">Add</button>
+
+    <% for ( let i = 0; i < wish.length; i++ ) { %>
+     <div class="item">
+        <li><input type="checkbox" style="float: left;" class="stk" value="redirect">
+       <p><%=  wish[i]  %></li> </p>
+     </div>
+     <% } %>
+</form>
+</div>

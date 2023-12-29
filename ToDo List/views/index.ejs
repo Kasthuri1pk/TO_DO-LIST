@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/layout.css">
+        <title>ToDo List</title>
+    </head>
+<body> 
+
+   
+<div class="container1">  
+<h1 class="hd">TO-DO LIST</h1>
+<h3 class="sub">DO SOMETHING THAT WILL INCH YOU CLOSER TO A  BETTER TOMORROW</h3>
+</div> 
+
+<div class="tdy">
+<a class="nav-link" href="/bucket"><i class="far fa-clone"></i>BUCKET LIST</a>
+</div>
+
+<div class="container">
+<form action="/addtask" method="post">
+    <input type="text"  name="newtask" placeholder="add task" >
+    <button class="btn">Add</button>
+
+<h2 class="tex">Tasks For The Day</h2>
+
+<div class="box">
+    <% for ( let i = 0; i < task.length; i++ ) { %>
+     <div class="item">
+        <li><input type="checkbox" style="float: left;" text class="stk" id="p">
+       <p><%=  task[i]  %></li> </p>
+     </div>
+     <% } %>
+
+</form>
+
+</div>
+</body>
+</html>
+
